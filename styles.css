@@ -1,0 +1,107 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif; /* Changed to Raleway */
+    background: #f4f4f9;
+    text-align: center;
+    line-height: 1.4; /* Slightly more line spacing */
+}
+
+input, button {
+    padding: 10px;
+    margin-top: 20px;
+    width: 200px; /* Consistent width */
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ffffff; /* Regular white background */
+    color: #333; /* Dark text for visibility */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.theme-button {
+    padding: 8px; 
+    margin-top: 2px;
+    width: auto; /* Auto width for content fitting */
+    min-width: 100px; /* Minimum width */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fffacd; /* Muted yellow background */
+    display: inline-block;
+    margin-right: 5px; /* Space between buttons */
+    text-align: center;
+    font-size: 14px; /* Slightly smaller font */
+    color: black;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.pair-container {
+    display: flex;
+    flex-direction: row; /* Ensure side-by-side layout when possible */
+    flex-wrap: nowrap; /* Prevent wrapping within a pair */
+    justify-content: space-between;
+    width: 100%; /* Full width to use available space */
+    margin-bottom: 20px;
+    align-items: stretch; /* Align the heights of summary and analysis */
+}
+
+.content-block {
+    width: 48%; /* Adjusts to 48% of the container width */
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    justify-content: center; /* Center text vertically if there's extra space */
+}
+
+.content-header {
+    font-size: 25px;
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px; /* Align text with the content blocks */
+}
+
+
+.summary {
+    background-color: #f0f8ff;
+}
+
+.analysis {
+    background-color: #fff0f5;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px; /* Assuming base font size is 16px */
+    padding-top: 5px;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+.title-icon {
+    vertical-align: middle; /* Aligns the icon vertically with the text */
+    margin-right: 5px; /* Adds a little space between the icon and the title */
+    margin-bottom: 12px; 
+    width: 32px; /* Example fixed width */
+    height: 32px; /* Example fixed height */
+}
+
+.icon-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to next line if not enough space */
+    align-items: center;
+    justify-content: center; /* Centering theme buttons */
+}
